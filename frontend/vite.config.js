@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     proxy:{
       "/api":{
-        target:"https://chinmay-chat.vercel.app/",
+        target:"http://localhost:4000",
       }
     }
   },
