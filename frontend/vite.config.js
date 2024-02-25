@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     proxy:{
       "/api":{
-        target:"https://chinmay-chat.vercel.app",
+        target:"https://chinmay-chat.vercel.app/",
       }
     }
   },
