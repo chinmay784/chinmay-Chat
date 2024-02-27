@@ -13,7 +13,7 @@ const useLogout = () => {
     setLoading(true)
     const toastId = toast.loading("Loading...")
     try {
-        const res = await fetch("https://chinmay-chat-backend.vercel.app/api/auth/logout",{
+        const res = await fetch("/api/auth/logout",{
             method:"POST",
             headers :{ "Content-Type" : "application/json"},
         })
