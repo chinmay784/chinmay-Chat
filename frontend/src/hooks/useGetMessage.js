@@ -10,7 +10,7 @@ const useGetMessage = () => {
     const getMessage = async ()=>{
         setLoading(true)
         try {
-            const res = await fetch(`/${selectedConversation._id}`);
+            const res = await fetch(`https://chinmay-chat-backend.vercel.app/api/messages/${selectedConversation._id}`);
 
             const data = await res.json();
             console.log(data)
