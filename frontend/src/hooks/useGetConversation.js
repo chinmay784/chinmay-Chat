@@ -9,7 +9,7 @@ const useGetConversation = () => {
     const getConversation = async () =>{
         setLoading(true)
         try {
-            const res = await fetch("/api/users");
+            const res = await fetch("/users");
             const data = await res.json();
             // console.log(data)
 
