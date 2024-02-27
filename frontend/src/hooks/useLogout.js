@@ -13,7 +13,7 @@ const useLogout = () => {
     setLoading(true)
     const toastId = toast.loading("Loading...")
     try {
-        const res = await fetch("/api/auth/logout",{
+        const res = await fetch("/logout",{
             method:"POST",
             headers :{ "Content-Type" : "application/json"},
         })
