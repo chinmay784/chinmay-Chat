@@ -18,7 +18,7 @@ const useSignup = () => {
      setLoading(true);
      const toastId = toast.loading("Loading...")
      try {  
-        const res = await fetch("https://chinmay-chat-backend.vercel.app/api/auth/signup",{
+        const res = await fetch("/api/auth/signup",{
             method:"POST",
             headers :{ "Content-Type": "application/json"},
             body : JSON.stringify({fullName,userName,password,confrimpassword,gender}),
