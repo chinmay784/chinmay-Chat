@@ -17,14 +17,14 @@ const port = process.env.PORT || 4000;
 app.use(express.json());
 app.use(cookieparser());
 
-// app.use(cors(
-//     {
-//      origin:["https://chinmay-chat-x5sk.vercel.app/"] ,
-//      methods:["POST","GET"],
-//      credentials:true,
+app.use(cors(
+    {
+     origin:["https://chinmay-chat-frontend.vercel.app/"] ,
+     methods:["POST","GET"],
+     credentials:true,
 
-//     }
-// ));
+    }
+));
 
 app.get("/",(req,res) =>{
     res.json("Hello")
