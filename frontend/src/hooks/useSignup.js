@@ -18,7 +18,7 @@ const useSignup = () => {
      setLoading(true);
      const toastId = toast.loading("Loading...")
      try {  
-        const res = await fetch("api/signup",{
+        const res = await fetch("/api/signup",{
             method:"POST",
             headers :{ "Content-Type": "application/json"},
             body : JSON.stringify({fullName,userName,password,confrimpassword,gender}),
