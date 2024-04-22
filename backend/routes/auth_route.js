@@ -4,7 +4,7 @@ const { protectRoute } = require("../middelweres/protectRoutes");
 
 const router = express.Router();
 
-router.post("/signup",protectRoute, signup);
+router.post("/signup", signup);
 router.post("/login",protectRoute,login);
 router.post("/logout",protectRoute,logout);
 
